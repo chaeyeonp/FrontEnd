@@ -6,13 +6,11 @@ import Userboard from "./Userboard";
 
 import {Card} from "@material-ui/core";
 import {UserList} from "./userTable";
-import {PunishList} from "./punishCard";
 
 const dataProvider = dataProv;
 export const userPage = () => (
     <Admin dashboard={Userboard} authProvider={authProvider} dataProvider={dataProvider}>
         <Resource name="member" list={UserList}/>
-        <Resource name="card" list={PunishList}/>
     </Admin>
 )
 

@@ -17,18 +17,6 @@ const useStyles = makeStyles({
     },
 });
 
-export const PunishList = props => (
-    <List {...props}>
-        <Datagrid rowClick="edit">
-            <TextField source="id" />
-            <TextField source="memberName" />
-            <TextField source="memberCount" />
-            <ImageField source="memberFace" />
-            <EditButton/>
-        </Datagrid>
-    </List>
-);
-
 export default function MediaCard(){
     const classes = useStyles();
 
@@ -51,53 +39,53 @@ export default function MediaCard(){
                             </Typography>
                         </CardContent>
                     </CardActionArea>
-                    <CardActionArea>
-                        <CardMedia
-                            className={classes.media}
-                            image="/static/images/cards/contemplative-reptile.jpg"
-                            title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                C
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                마스크 좀 쓰세요!
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                    <CardActionArea>
-                        <CardMedia
-                            className={classes.media}
-                            image="/static/images/cards/contemplative-reptile.jpg"
-                            title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                B
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                마스크 좀 쓰세요!
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                    <CardActionArea>
-                        <CardMedia
-                            className={classes.media}
-                            image="/static/images/cards/contemplative-reptile.jpg"
-                            title="Contemplative Reptile"
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                D
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                마스크 좀 쓰세요!
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
+                {/*    <CardActionArea>*/}
+                {/*        <CardMedia*/}
+                {/*            className={classes.media}*/}
+                {/*            image="/static/images/cards/contemplative-reptile.jpg"*/}
+                {/*            title="Contemplative Reptile"*/}
+                {/*        />*/}
+                {/*        <CardContent>*/}
+                {/*            <Typography gutterBottom variant="h5" component="h2">*/}
+                {/*                C*/}
+                {/*            </Typography>*/}
+                {/*            <Typography variant="body2" color="textSecondary" component="p">*/}
+                {/*                마스크 좀 쓰세요!*/}
+                {/*            </Typography>*/}
+                {/*        </CardContent>*/}
+                {/*    </CardActionArea>*/}
+                {/*</Grid>*/}
+            {/*    <Grid item xs={12} md={6}>*/}
+            {/*        <CardActionArea>*/}
+            {/*            <CardMedia*/}
+            {/*                className={classes.media}*/}
+            {/*                image="/static/images/cards/contemplative-reptile.jpg"*/}
+            {/*                title="Contemplative Reptile"*/}
+            {/*            />*/}
+            {/*            <CardContent>*/}
+            {/*                <Typography gutterBottom variant="h5" component="h2">*/}
+            {/*                    B*/}
+            {/*                </Typography>*/}
+            {/*                <Typography variant="body2" color="textSecondary" component="p">*/}
+            {/*                    마스크 좀 쓰세요!*/}
+            {/*                </Typography>*/}
+            {/*            </CardContent>*/}
+            {/*        </CardActionArea>*/}
+            {/*        <CardActionArea>*/}
+            {/*            <CardMedia*/}
+            {/*                className={classes.media}*/}
+            {/*                image="/static/images/cards/contemplative-reptile.jpg"*/}
+            {/*                title="Contemplative Reptile"*/}
+            {/*            />*/}
+            {/*            <CardContent>*/}
+            {/*                <Typography gutterBottom variant="h5" component="h2">*/}
+            {/*                    D*/}
+            {/*                </Typography>*/}
+            {/*                <Typography variant="body2" color="textSecondary" component="p">*/}
+            {/*                    마스크 좀 쓰세요!*/}
+            {/*                </Typography>*/}
+            {/*            </CardContent>*/}
+            {/*        </CardActionArea>*/}
                 </Grid>
             </Grid>
         </Card>
