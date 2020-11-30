@@ -28,7 +28,8 @@ const useStyles = makeStyles({
 
     font: {
         fontFamily: 'Sansita Swashed',
-        textAlign: "center"
+        textAlign: "center",
+        fontSize:"40px"
     }
 
 });

@@ -11,6 +11,7 @@ const dataProvider = dataProv;
 export const userPage = () => (
     <Admin dashboard={Userboard} authProvider={authProvider} dataProvider={dataProvider}>
         <Resource name="member" list={UserList}/>
+
     </Admin>
 )
 

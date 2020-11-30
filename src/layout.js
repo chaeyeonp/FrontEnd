@@ -6,6 +6,8 @@ import Typography from '@material-ui/core/Typography';
 import {Resource} from 'react-admin';
 import {UserList} from "./userTable";
 import Sample from "./punishCard";
+import {MemberList} from "./punish";
+import {sizing} from "@material-ui/system";
 
 
 const WebFont = require('webfontloader');
@@ -21,18 +23,17 @@ WebFont.load({
 const useStyles = makeStyles((theme) => ({
 
     root: {
-        flexGrow: 1,
-        maxWidth: 752,
-        alignContent: 'center'
-    },
-    demo: {
-        backgroundColor: theme.palette.background.paper,
-    },
-    title: {
-        margin: theme.spacing(4, 0, 2),
-        fontFamily: 'Do Hyeon'
+        marginLeft: 50,
+        marginRight:30,
+        alignSelf:"center"
 
     },
+
+    title: {
+        fontFamily: 'Do Hyeon'
+
+    }
+
 }));
 
 export default function MultipleList() {
@@ -41,23 +42,36 @@ export default function MultipleList() {
     return (
         <div className={classes.root}>
 
-            <Grid container spacing={4}>
-                <Grid item xs={20} md={6}>
+            <Grid container spacing={40} className={classes.root}>
+                <Grid item xs={4} md={3} className={classes.root}>
+                    <Typography variant="h5" className={classes.title}>
+                        Top2
+                    </Typography>
+                    <div className={classes.demo} spacing={20}>
+                        <Resource name="member" list={MemberList}/>
+                    </div>
 
-                    <Typography variant="h6" className={classes.title}>
+                </Grid>
+
+
+                <Grid item xs={4} md={3} className={classes.root}>
+
+                    <Typography variant="h5" className={classes.title}>
                         벌점 현황
                     </Typography>
                     <div className={classes.demo}>
                         <Resource name="member" list={UserList}/>
                     </div>
                 </Grid>
-                <Grid item xs={20} md={6}>
-                    <Typography variant="h6" className={classes.title}>
-                        불명예의 전당
+
+                <Grid item xs={4} md={3} className={classes.root}>
+                    <Typography variant="h5" className={classes.title}>
+                        마스크 착용 의무화
                     </Typography>
                     <div className={classes.demo}>
-                        <Resource name="member" list={Sample}/>
-
+                        <img
+                            src="https://search.pstatic.net/common/?src=http%3A%2F%2Fimgnews.naver.net%2Fimage%2F5819%2F2020%2F11%2F13%2F0000010493_001_20201113113150217.jpg&type=sc960_832"
+                            width="240px"/>
                     </div>
                 </Grid>
             </Grid>
