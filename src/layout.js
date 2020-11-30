@@ -8,16 +8,30 @@ import {UserList} from "./userTable";
 import Sample from "./punishCard";
 
 
+const WebFont = require('webfontloader');
+
+
+WebFont.load({
+    google: {
+        families: ['Do Hyeon', 'sans-serif']
+    }
+});
+
+
 const useStyles = makeStyles((theme) => ({
+
     root: {
         flexGrow: 1,
         maxWidth: 752,
+        alignContent: 'center'
     },
     demo: {
         backgroundColor: theme.palette.background.paper,
     },
     title: {
         margin: theme.spacing(4, 0, 2),
+        fontFamily: 'Do Hyeon'
+
     },
 }));
 
@@ -39,7 +53,7 @@ export default function MultipleList() {
                 </Grid>
                 <Grid item xs={20} md={6}>
                     <Typography variant="h6" className={classes.title}>
-                        🚷불명예의 전당🚷
+                        불명예의 전당
                     </Typography>
                     <div className={classes.demo}>
                         <Resource name="member" list={Sample}/>
