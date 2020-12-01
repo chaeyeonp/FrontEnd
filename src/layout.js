@@ -7,7 +7,7 @@ import {Resource} from 'react-admin';
 import {UserList} from "./userTable";
 import Sample from "./punishCard";
 import {MemberList} from "./punish";
-import {sizing} from "@material-ui/system";
+import {color, sizing} from "@material-ui/system";
 
 
 const WebFont = require('webfontloader');
@@ -22,19 +22,44 @@ WebFont.load({
 
 const useStyles = makeStyles((theme) => ({
 
-    root: {
-        marginLeft: 50,
-        marginRight:30,
-        alignSelf:"center"
+        root: {
+            marginLeft:50,
+            marginRight: 30,
+            alignSelf: "center",
+            height:"100%",
+            width:"100%"
+            // backgroundColor: "#dd9999"
 
-    },
+        },
+        memo: {
+            marginLeft: 50,
+            marginRight: 30,
+            alignSelf: "center"
 
-    title: {
-        fontFamily: 'Do Hyeon'
+        },
 
-    }
 
-}));
+// backgroundColor: "#f1f1f3",
+// boxShadow: "0 3px 5px -3px #000",
+// color: "#111111",
+// parseFloat: "right",
+// lineHeight: "14em",
+// marginBlock: "1em",
+// paddingBlock: "2em",
+// transformBox: "rotate(3deg)",
+// width: "20em",
+// marginLeft: 50,
+// marginRight: 30,
+// alignSelf: "center"
+
+
+        title: {
+            fontFamily: 'Do Hyeon'
+
+        }
+
+    }))
+;
 
 export default function MultipleList() {
     const classes = useStyles();
@@ -43,7 +68,7 @@ export default function MultipleList() {
         <div className={classes.root}>
 
             <Grid container spacing={40} className={classes.root}>
-                <Grid item xs={4} md={3} className={classes.root}>
+                <Grid item xs={4} md={3} className={classes.memo}>
                     <Typography variant="h5" className={classes.title}>
                         Top2
                     </Typography>
@@ -54,7 +79,7 @@ export default function MultipleList() {
                 </Grid>
 
 
-                <Grid item xs={4} md={3} className={classes.root}>
+                <Grid item xs={4} md={3} className={classes.memo}>
 
                     <Typography variant="h5" className={classes.title}>
                         벌점 현황
@@ -64,7 +89,7 @@ export default function MultipleList() {
                     </div>
                 </Grid>
 
-                <Grid item xs={4} md={3} className={classes.root}>
+                <Grid item xs={4} md={3} className={classes.memo}>
                     <Typography variant="h5" className={classes.title}>
                         마스크 착용 의무화
                     </Typography>

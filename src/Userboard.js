@@ -19,8 +19,9 @@ WebFont.load({
 
 const useStyles = makeStyles({
     root: {
-        backgroundColor: 'pink'
-
+        height:"100%",
+        width:"100%",
+        backgroundColor: "#dd9999"
     },
     media: {
         height: 140,
@@ -29,7 +30,9 @@ const useStyles = makeStyles({
     font: {
         fontFamily: 'Sansita Swashed',
         textAlign: "center",
-        fontSize:"40px"
+        fontSize:"40px",
+        // background: "linear-gradient(15deg, #d33f34 50%, #a61322 50.1%)",
+        backgroundSize:"20%"
     }
 
 });
