@@ -1,7 +1,7 @@
 // in src/App.js
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import userPage from './userPage';
+import UserPage from './userPage';
 import adminPage from './adminPage';
 
 export const App = () => (
@@ -14,7 +14,7 @@ export const App = () => (
         </li>
 
         <Route path="/admin" component={adminPage}/>
-        <Route path="/userpage" component={userPage}/>
+        <Route path="/userpage" component={UserPage}/>
     </Router>
 )
 export default App;

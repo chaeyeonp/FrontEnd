@@ -19,9 +19,7 @@ WebFont.load({
 
 const useStyles = makeStyles({
     root: {
-        height:"100%",
-        width:"100%",
-        backgroundColor: "#dd9999"
+
     },
     media: {
         height: 140,

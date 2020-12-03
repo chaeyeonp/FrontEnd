@@ -2,16 +2,11 @@ import React from 'react';
 import {makeStyles} from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-
 import {Resource} from 'react-admin';
 import {UserList} from "./userTable";
-import Sample from "./punishCard";
 import {MemberList} from "./punish";
-import {color, sizing} from "@material-ui/system";
-
 
 const WebFont = require('webfontloader');
-
 
 WebFont.load({
     google: {
@@ -23,12 +18,9 @@ WebFont.load({
 const useStyles = makeStyles((theme) => ({
 
         root: {
-            marginLeft:50,
+            marginLeft: 50,
             marginRight: 30,
-            alignSelf: "center",
-            height:"100%",
-            width:"100%"
-            // backgroundColor: "#dd9999"
+            alignSelf: "center"
 
         },
         memo: {
@@ -37,21 +29,6 @@ const useStyles = makeStyles((theme) => ({
             alignSelf: "center"
 
         },
-
-
-// backgroundColor: "#f1f1f3",
-// boxShadow: "0 3px 5px -3px #000",
-// color: "#111111",
-// parseFloat: "right",
-// lineHeight: "14em",
-// marginBlock: "1em",
-// paddingBlock: "2em",
-// transformBox: "rotate(3deg)",
-// width: "20em",
-// marginLeft: 50,
-// marginRight: 30,
-// alignSelf: "center"
-
 
         title: {
             fontFamily: 'Do Hyeon'
