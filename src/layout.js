@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import {Resource} from 'react-admin';
 import {UserList} from "./userTable";
-import {MemberList} from "./punish";
+import {UsersList} from "./punish";
 
 const WebFont = require('webfontloader');
 
@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
         },
         memo: {
+
             marginLeft: 50,
             marginRight: 30,
             alignSelf: "center"
@@ -44,13 +45,13 @@ export default function MultipleList() {
     return (
         <div className={classes.root}>
 
-            <Grid container spacing={40} className={classes.root}>
+            <Grid container className={classes.root}>
                 <Grid item xs={4} md={3} className={classes.memo}>
                     <Typography variant="h5" className={classes.title}>
                         Top2
                     </Typography>
                     <div className={classes.demo} spacing={20}>
-                        <Resource name="member" list={MemberList}/>
+                        <Resource name="member" list={UsersList}/>
                     </div>
 
                 </Grid>

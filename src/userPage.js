@@ -3,6 +3,8 @@ import {Admin, Resource} from 'react-admin';
 import authProvider from './authProvider';
 import dataProv from './dataProv';
 import Userboard from "./Userboard";
+import { groupNameFilterReducer } from "./punishCount";
+
 
 import {Card} from "@material-ui/core";
 import {UserList} from "./userTable";
@@ -22,7 +24,8 @@ export const UserPage = () => {
     return (
         <div className={classes.root}>
 
-            <Admin dashboard={Userboard} authProvider={authProvider} dataProvider={dataProvider}>
+            <Admin dashboard={Userboard} authProvider={authProvider} dataProvider={dataProvider} customReducers={{ groupNameFilter: groupNameFilterReducer }}
+            >
                 <Resource name="member" list={UserList}/>
 
             </Admin>

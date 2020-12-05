@@ -18,9 +18,7 @@ WebFont.load({
 });
 
 const useStyles = makeStyles({
-    root: {
-
-    },
+    root: {},
     media: {
         height: 140,
     },
@@ -28,9 +26,8 @@ const useStyles = makeStyles({
     font: {
         fontFamily: 'Sansita Swashed',
         textAlign: "center",
-        fontSize:"40px",
-        // background: "linear-gradient(15deg, #d33f34 50%, #a61322 50.1%)",
-        backgroundSize:"20%"
+        fontSize: "40px",
+        backgroundSize: "20%"
     }
 
 });
