@@ -14,25 +14,6 @@ WebFont.load({
     }
 });
 
-const useStyles = makeStyles({
-    // ul : {
-    //     margin: "0",
-    //     padding: 0,
-    //     overflow: "hidden",
-    //     backgroundColor: "#333"
-    // },
-    // media: {
-    //     height: 140,
-    // },
-    //
-    // font: {
-    //     fontFamily: 'Sansita Swashed',
-    //     textAlign: "center",
-    //     fontSize: "40px",
-    //     backgroundSize: "20%"
-    // }
-
-});
 
 export default function App() {
     const classes = useStyles();

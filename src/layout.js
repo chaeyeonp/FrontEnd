@@ -48,14 +48,13 @@ export default function MultipleList() {
             <Grid container className={classes.root}>
                 <Grid item xs={4} md={3} className={classes.memo}>
                     <Typography variant="h5" className={classes.title}>
-                        Top2
+                        최고 벌점자
                     </Typography>
                     <div className={classes.demo} spacing={20}>
                         <Resource name="member" list={UsersList}/>
                     </div>
 
                 </Grid>
-
 
                 <Grid item xs={4} md={3} className={classes.memo}>
 
