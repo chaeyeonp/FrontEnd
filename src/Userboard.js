@@ -1,9 +1,6 @@
 import * as React from "react";
 import {Card, CardContent, CardHeader} from '@material-ui/core';
-import {Admin, Datagrid, EditButton, List, Resource, TextField} from "react-admin";
-import {MemberList} from "./memberTable";
-import {UserList} from "./userTable";
-import Sample from "./punishCard";
+import { Resource} from "react-admin";
 import Lout from './layout'
 import {makeStyles} from "@material-ui/core/styles";
 
